@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 	<head>
-		<script>
-			var startLoadTime = new Date().getTime(),
-				DomStartLoadTime, DomLoadedTime, jsLoadedTime, windowLoadedTime, interfaceArr = [];
-		</script>
 		<meta charset="UTF-8">
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -26,10 +21,6 @@
 	</head>
 
 	<body>
-		<script>
-			DomStartLoadTime = new Date().getTime();
-		</script>
-		<!-- DOM Content Start -->
 		<div class="wrapper">
 			<nav class="nav">
 				<div class="left fl"><img src="img/static/person.png" alt="" /></div>
@@ -919,25 +910,8 @@
 				</div>
 			</div>
 		</div>
-		<!-- Dom Content End -->
-		<script>
-			DomLoadedTime = new Date().getTime();
-		</script>
 	</body>
-	<script src="http://resource.qxiu.com/common/js/jquery/jquery-1.11.3.min.js"></script>
-	<script>
-		$.ajaxSetup({
-			beforeSend: function() {
-				this.startAjaxTime = new Date().getTime()
-			},
-			complete: function() {
-				var DoneTime = new Date().getTime();
-				if(DoneTime - this.startAjaxTime < 2000) {
-					interfaceArr.push(DoneTime - this.startAjaxTime)
-				}
-			}
-		});
-	</script>
+	<script src="js/jquery-1.10.1.min.js"></script>
 	<script src="js/index.js"></script>
 	<script src="http://resource.qxiu.com/common/js/report/report.js"></script>
 	<script>

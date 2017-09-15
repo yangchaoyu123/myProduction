@@ -1,0 +1,173 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dd, dl {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  /*padding: 40px;*/
+  /*list-style-type: none;*/
+  /*list-style-image: url(1.png); */
+  /*list-style-position: outside; */
+  list-style: none;
+}
+
+/*设置默认的文字大小和类型*/
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i, em {
+  font-style: normal;
+}
+
+input {
+  outline: none;
+  /*border: 1px red;*/
+}
+
+a {
+  outline: none;
+}
+
+select, input, img {
+  vertical-align: middle;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+html {
+  font-size: 100px;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.wrapper .nav {
+  width: 96%;
+  margin: 0.2rem auto 0;
+  height: 1rem;
+}
+.wrapper .left {
+  width: 40%;
+  height: 100%;
+}
+.wrapper .left img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .right {
+  width: 56%;
+  height: 100%;
+  line-height: 1rem;
+}
+.wrapper .right li {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.12rem;
+  color: #ccc;
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
+.wrapper .right li:hover {
+  color: #000;
+}
+.wrapper .content {
+  width: 96%;
+  margin: 0.4rem auto 0;
+  height: 4rem;
+}
+.wrapper .content .content_bg li {
+  width: 31%;
+  height: 1.2rem;
+  float: left;
+  overflow: hidden;
+  background: #ccc;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.wrapper .content .content_bg li p {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.12rem;
+  font-family: "微软雅黑";
+  color: #ccc;
+  background: #fff;
+}
+.wrapper .content .content_bg li img {
+  width: 100%;
+  height: 1.05rem;
+}
+.wrapper .content .content_bg li:nth-child(3n-1) {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.wrapper .content .content_bg li:nth-child(1) {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wrapper .content .content_page li {
+  width: 31%;
+  height: 1.2rem;
+  float: left;
+  overflow: hidden;
+  background: #ccc;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+.wrapper .content .content_page li p {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.12rem;
+  font-family: "微软雅黑";
+  color: #ccc;
+  background: #fff;
+}
+.wrapper .content .content_page li img {
+  width: 100%;
+  height: 1.05rem;
+}
+.wrapper .content .content_page li:nth-child(3n-1) {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.wrapper .content .content_page li:nth-child(1) {
+  margin-left: 0;
+  margin-right: 0;
+}

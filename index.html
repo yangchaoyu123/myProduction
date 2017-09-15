@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<script>
+			var startLoadTime = new Date().getTime(),
+				DomStartLoadTime, DomLoadedTime, jsLoadedTime, windowLoadedTime, interfaceArr = [];
+		</script>
+		<meta charset="UTF-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Index Demo Page</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link href="http://resource.qxiu.com/common/favicon.ico" type="image/x-icon" rel="icon">
+		<script>
+			(function(win, doc) {
+				win.addEventListener('DOMContentLoaded', function() {
+					function getFont() {
+						doc.documentElement.style.fontSize = doc.documentElement.clientWidth / 3.2 + 'px';
+					}
+					getFont();
+					win.addEventListener('resize', getFont, false);
+				}, false)
+			})(window, document)
+		</script>
+	</head>
+
+	<body>
+		<script>
+			DomStartLoadTime = new Date().getTime();
+		</script>
+		<!-- DOM Content Start -->
+		<div class="wrapper">
+			<nav class="nav">
+				<div class="left fl"><img src="img/static/person.png" alt="" /></div>
+				<ul class="right fr">
+					<li>界面设计</li>
+					<li>动效设计</li>
+					<li>手绘作品</li>
+				</ul>
+			</nav>
+			<!--内容-->
+			<div class="content_wrapper">
+				<div class="content">
+					<ul class="content_bg" data-controll="btn_one">
+						<li data-btn="1"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="2"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="3"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="4"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="5"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="6"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="7"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="8"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+						<li data-btn="9"><img src="img/static/defaultBg.png" alt="" />
+							<p>界面设计</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+				</div>
+				<div class="content" style="display:none">
+					<ul class="content_bg" data-controll="btn_one">
+						<li data-btn="1"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="2"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="3"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="4"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="5"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="6"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="7"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="8"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+						<li data-btn="9"><img src="img/static/defaultBg2.png" alt="" />
+							<p>动效设计</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+				</div>
+				<div class="content" style="display:none">
+					<ul class="content_bg" data-controll="btn_one">
+						<li data-btn="1"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="2"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="3"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="4"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="5"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="6"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="7"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="8"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+						<li data-btn="9"><img src="img/static/defaultBg3.png" alt="" />
+							<p>手绘作品</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+					<ul class="content_page" style="display:none">
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+						<li><img src="img/static/page.png" alt="" />
+							<p>二级页面</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Dom Content End -->
+		<script>
+			DomLoadedTime = new Date().getTime();
+		</script>
+	</body>
+	<script src="http://resource.qxiu.com/common/js/jquery/jquery-1.11.3.min.js"></script>
+	<script>
+		$.ajaxSetup({
+			beforeSend: function() {
+				this.startAjaxTime = new Date().getTime()
+			},
+			complete: function() {
+				var DoneTime = new Date().getTime();
+				if(DoneTime - this.startAjaxTime < 2000) {
+					interfaceArr.push(DoneTime - this.startAjaxTime)
+				}
+			}
+		});
+	</script>
+	<script src="js/index.js"></script>
+	<script src="http://resource.qxiu.com/common/js/report/report.js"></script>
+	<script>
+		jsLoadedTime = new Date().getTime();
+	</script>
+
+</html>
